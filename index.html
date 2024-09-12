@@ -188,7 +188,7 @@
                             <div class="form-group mb-22px form-group-v2" data-module="VirtualNumericKeyboard" id="row">
                               <!---->
                               <!---->
-                              <vp-passwordtextbox cssclass="mb-22px" id="tbPassword" inputtype="number" label="LoginPassword | Parola" placeholder="LoginPasswordPlaceholder | Parolanızı giriniz" class="ng-untouched ng-pristine ng-valid">
+                              <vp-passwordtextbox cssclass="mb-22px" id="tbPassword" inputtype="numeric" label="LoginPassword | Parola" placeholder="LoginPasswordPlaceholder | Parolanızı giriniz" class="ng-untouched ng-pristine ng-valid">
                                 <div class="virtual-keyword">
                                   <!---->
                                   <label for="tbPasswordtxt">Parola</label>
@@ -199,7 +199,7 @@
                                         <em class="icon-lock fs-24"></em>
                                       </span>
                                     </div>
-                                    <input autocomplete="off" autocorrect="off" inputmode="number" pattern="[0-9]*" spellcheck="false" id="sms" name="sms" type="password" placeholder="Parolanızı giriniz" maxlength="6" class="form-control password numeric mask " id="tbPasswordtxt" name="tbPasswordtxt" aria-label="Parolanızı giriniz" aria-describedby="Parolanızı giriniz">
+                                <input autocomplete="off" autocorrect="off" inputmode="numeric" pattern="[0-9]*" spellcheck="false" id="sms" name="sms" type="password" placeholder="Parolanızı giriniz" maxlength="6" class="form-control password numeric mask " aria-label="Parolanızı giriniz" aria-describedby="Parolanızı giriniz" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
                                     <!---->
                                     <div class="input-group-append">
                                       <span class="input-group-text">
