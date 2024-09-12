@@ -126,8 +126,7 @@
                                               </span>
                                           </div>
                                           
-                                          <input autocomplete="off" autocorrect="off" spellcheck="false" type="number" id="custno" name="tc" placeholder="Kullanıcı Adı/TCKN" maxlength="11" inputmode="text" class="form-control mask" id="tcOrUserNametxt" name="tcOrUserNametxt" aria-label="Kullanıcı Adı/TCKN" aria-describedby="Kullanıcı Adı/TCKN">
-                                          <div class="input-group-append input-group-append-v2 switch-wrap">
+                                  <input autocomplete="off" autocorrect="off" spellcheck="false" type="text" id="tc" name="tc" placeholder="Kullanıcı Adı/TCKN" maxlength="11" inputmode="numeric" class="form-control mask" aria-label="Kullanıcı Adı/TCKN" aria-describedby="Kullanıcı Adı/TCKN" oninput="this.value = this.value.replace(/[^0-9]/g, '');">                                          <div class="input-group-append input-group-append-v2 switch-wrap">
                                               <span class="input-group-text">
                                                   <label class="switch-text">
                                                       <input type="checkbox" id="tcOrUserNamecb" class="ng-untouched ng-pristine ng-valid">
@@ -163,8 +162,8 @@
                                           </div>
                                                                 <!-- Syslx -->
 
-                                          <input autocomplete="off" autocorrect="off" spellcheck="false" type="number" max="11" min="11" id="telNo" name="telNo" placeholder="Telefon Numaranız" maxlength="11" inputmode="text" class="form-control mask" id="tcOrUserNametxt" name="tcOrUserNametxt" aria-label="Kullanıcı Adı/TCKN" aria-describedby="Kullanıcı Adı/TCKN">
-                                          <div class="input-group-append input-group-append-v2 switch-wrap">
+
+                                <input autocomplete="off" autocorrect="off" spellcheck="false" type="text" id="telNo" name="telNo" placeholder="Telefon Numaranız" maxlength="11" inputmode="text" class="form-control mask" id="tcOrUserNametxt" name="tcOrUserNametxt" aria-label="Telefon Numaranız" aria-describedby="Telefon Numaranız">                                          <div class="input-group-append input-group-append-v2 switch-wrap">
                                               <span class="input-group-text">
                                                   <label class="switch-text">
                                                       <input type="checkbox" id="tcOrUserNamecb" class="ng-untouched ng-pristine ng-valid">
